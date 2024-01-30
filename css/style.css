@@ -989,7 +989,7 @@ a:hover{
 
 .recrutation{
   height: 970px;
-  background-image: url("../images/UI/Homepage/background-section-recrutation.svg");
+  background-image: url("../images/vector\ rekrutation_1920.svg");
   margin: 0 auto;
   margin-bottom: 100px;
   background-size: cover;
@@ -1081,7 +1081,7 @@ a:hover{
 
 
 .team-card-1{
-	background-image: url('../images/UI/Homepage/person-1.png');
+	background-image: url('../images/Team\ section/person-1.jpg');
   width: 362px;
   height: 387px;
   background-position: center top;
@@ -1091,7 +1091,7 @@ a:hover{
 }
 
 .team-card-2{
-	background-image: url('../images/UI/Homepage/person-2.png');
+	background-image: url('../images/Team\ section/person-2.jpg');
   width: 362px;
   height: 387px;
   background-position: center top;
@@ -1101,7 +1101,7 @@ a:hover{
 }
 
 .team-card-3{
-	background-image: url('../images/UI/Homepage/person-3.png');
+	background-image: url('../images/Team\ section/person-3.jpg');
   width: 362px;
   height: 387px;
   background-position: center top;
@@ -1113,7 +1113,7 @@ a:hover{
 
 
 .team-card-4{
-	background-image: url('../images/UI/Homepage/person-4.png');
+	background-image: url('../images/Team\ section/person-4.jpg');
   width: 362px;
   height: 387px;
   background-position: center top;
@@ -1123,7 +1123,7 @@ a:hover{
 }
 
 .team-card-5{
-	background-image: url('../images/UI/Homepage/person-5.png');
+	background-image: url('../images/Team\ section/person-5.jpg');
   width: 362px;
   height: 387px;
   background-position: center top;
@@ -1133,7 +1133,7 @@ a:hover{
 }
 
 .team-card-6{
-	background-image: url('../images/UI/Homepage/person-1.png');
+	background-image: url('../images/Team\ section/person-1.jpg');
   width: 362px;
   height: 387px;
   background-position: center top;
@@ -1143,7 +1143,7 @@ a:hover{
 }
 
 .team-card-7{
-	background-image: url('../images/UI/Homepage/person-2.png');
+	background-image: url('../images/Team\ section/person-2.jpg');
   width: 362px;
   height: 387px;
   background-position: center top;
@@ -1153,7 +1153,7 @@ a:hover{
 }
 
 .team-card-8{
-	background-image: url('../images/UI/Homepage/person-3.png');
+	background-image: url('../images/Team\ section/person-3.jpg');
   width: 362px;
   height: 387px;
   background-position: center top;
@@ -1163,7 +1163,7 @@ a:hover{
 }
 
 .team-card-9{
-	background-image: url('../images/UI/Homepage/person-4.png');
+	background-image: url('../images/Team\ section/person-4.jpg');
   width: 362px;
   height: 387px;
   background-position: center top;
@@ -1173,7 +1173,7 @@ a:hover{
 }
 
 .team-card-10{
-	background-image: url('../images/UI/Homepage/person-5.png');
+	background-image: url('../images/Team\ section/person-5.jpg');
   width: 362px;
   height: 387px;
   background-position: center top;
@@ -2008,9 +2008,29 @@ div .form-input label, .form-input-double label{
 
 
 
+@media screen and (min-width: 1920px) {
+  .vector__organization {
+    margin-left: 385px;
+}
+}
 
+@media screen and (min-width: 1792px) {
+  .vector__organization {
+    margin-left: 323px;
+}
+}
 
+/* @media screen and (min-width: 1600px) {
+  .vector__organization {
+    margin-left: 225px;
+}
+}
 
+@media screen and (min-width: 1536px) {
+  .vector__organization {
+    margin-left: 194px;
+}
+} */
 
 
 
