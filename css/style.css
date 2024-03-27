@@ -1488,7 +1488,7 @@ div .form-input label,
 
 @media screen and (max-width: 980px) {
   .swiper-pagination-horizontal.swiper-pagination-bullets.swiper-pagination-bullets-dynamic {
-    top: 50%;
+    top: 47%;
   }
   .swiper-button-prev-1 {
     margin-left: 130px;
