@@ -1850,8 +1850,8 @@ div .form-input label,
     background-color: #547E32;
   }
   .gallery__swiper-img {
-    width: 285px;
-    height: 320px;
+    width: auto;
+    height: 367px;
   }
   .swiper-button-prev-2,
   .swiper-button-next-2 {
