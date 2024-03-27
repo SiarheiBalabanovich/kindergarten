@@ -35,7 +35,6 @@ img {
 
 
 
-
 /* TOP section */
 
 .top-section {
@@ -67,7 +66,7 @@ img {
   text-decoration: none;
 }
 
-a:hover{
+a:hover {
   color: #547E32;
 }
 
@@ -96,17 +95,16 @@ a:hover{
   margin-right: 6px;
 }
 
-.info-content{
+.info-content {
   color: #1E1E1C;
   font-size: 12px;
   font-weight: 400;
   line-height: 16px;
 }
 
-.info-content:hover{
+.info-content:hover {
   color: #547E32;
 }
-
 
 
 
@@ -172,7 +170,7 @@ a:hover{
   background-color: #547E32;
 }
 
-.button__menu:hover{
+.button__menu:hover {
   background-color: #B5C273;
   color: #1E1E1C;
 }
@@ -200,10 +198,9 @@ a:hover{
 
 
 
-
 /* INFORMATION section */
 
-.vector-1__slider{
+.vector-1__slider {
   width: 485px;
   height: 100%;
   position: relative;
@@ -211,14 +208,14 @@ a:hover{
   justify-content: center;
 }
 
-.vector-1__slider-img{
+.vector-1__slider-img {
   width: 100%;
   position: absolute;
   display: flex;
   justify-content: center;
 }
 
-.vector-2__slider{
+.vector-2__slider {
   width: 445px;
   height: 100%;
   position: relative;
@@ -226,14 +223,14 @@ a:hover{
   justify-content: center;
 }
 
-.vector-2__slider-img{
+.vector-2__slider-img {
   width: 100%;
   position: absolute;
   display: flex;
   justify-content: center;
 }
 
-.vector__slider-title{
+.vector__slider-title {
   position: relative;
   margin-bottom: 12px;
   color: #FFFFFF;
@@ -245,7 +242,7 @@ a:hover{
   top: 15px;
 }
 
-.vector__slider-text1{
+.vector__slider-text1 {
   position: relative;
   color: #1E1E1C;
   font-size: 16px;
@@ -256,7 +253,8 @@ a:hover{
   width: 400px;
 }
 
-.vector__slider-text2, .vector__slider-text3{
+.vector__slider-text2, 
+.vector__slider-text3 {
   position: relative;
   color: #1E1E1C;
   font-size: 16px;
@@ -267,7 +265,7 @@ a:hover{
   width: 400px;
 }
 
-.information{
+.information {
   height: 702px;
   margin-bottom: 100px;
   background-size: cover;
@@ -275,14 +273,14 @@ a:hover{
   position: relative;
 }
 
-.information-slider__section-container{
+.information-slider__section-container {
   position: relative;
   max-width: 1146px;
   margin: 0 auto;
   margin-left: 136px;
 }
 
-.information__item{
+.information__item {
   display: grid;
   grid-template-columns: 485px 558px;
   gap: 103px;
@@ -290,11 +288,11 @@ a:hover{
   margin-top: 80px;
 }
 
-.information__item-content{
+.information__item-content {
   padding-bottom: 120px;
 }
 
-.information__item-img{
+.information__item-img {
   margin-bottom: 79px;
   width: 558px;
   height: 425px;
@@ -306,18 +304,18 @@ a:hover{
   z-index: 1;
 }
 
-.swiper-pagination-bullet{
+.swiper-pagination-bullet {
   background-color: #FFFFFF;
   width: 10px;
   height: 10px;
   opacity: 1;
 }
 
-.swiper-pagination-bullet-active{
+.swiper-pagination-bullet-active {
   background-image: url("/images/Hero section/pagination-active.svg");
 }
 
-.swiper-button-prev-1{
+.swiper-button-prev-1 {
   background-color: #547E32;
   background-position: center;
   background-size: 40px;
@@ -332,7 +330,7 @@ a:hover{
   margin-left: -60px;
 }
 
-.swiper-button-next-1{
+.swiper-button-next-1 {
   background-color: #547E32;
   background-position: center;
   background-size: 40px;
@@ -347,11 +345,11 @@ a:hover{
   margin-right: -30px;
 }
 
-.swiper-button-prev-1:after{
+.swiper-button-prev-1:after {
   font-size: 17px!important;
 }
 
-.swiper-button-next-1:after{
+.swiper-button-next-1:after {
   font-size: 17px!important;
 }
 
@@ -385,10 +383,9 @@ a:hover{
 
 
 
-
 /* OFFERS section */
 
-.vector{
+.vector {
   display: flex;
   justify-content: center;
 }
@@ -400,7 +397,7 @@ a:hover{
   padding-bottom: 30px;
 }
 
-.vector__brown-img{
+.vector__brown-img {
   width: 100%;
 }
 
@@ -417,7 +414,7 @@ a:hover{
   width: 303px;
 }
 
-.offers{
+.offers {
   margin-bottom: 100px;
 }
 
@@ -427,7 +424,7 @@ a:hover{
   position: relative;
 }
 
-#svglizard{
+#svglizard {
   position: absolute;
   width: 344px;
   height: 661px;
@@ -501,7 +498,6 @@ a:hover{
   margin-left: 30px;
   margin-bottom: 35px;
   border-bottom: 1px solid #CDCDCD;
-  
 }
 
 .content.active {
@@ -517,7 +513,7 @@ a:hover{
 
 /* QUOTE section */
 
-.quote{
+.quote {
   background-image: url("/images/Quote section/background-quote.svg");
   height: 585px;
   margin-bottom: 110px;
@@ -535,7 +531,7 @@ a:hover{
   text-align: center;
 }
 
-.quote__text{
+.quote__text {
   color: #1E1E1C;
   font-size: 40px;
   font-weight: 600;
@@ -544,7 +540,7 @@ a:hover{
   margin-bottom: 12px;
 }
 
-.quote__author-text{
+.quote__author-text {
   color: #1E1E1C;
   font-size: 24px;
   font-weight: 500;
@@ -553,11 +549,10 @@ a:hover{
 
 
 
-
 /* ORGANIZATION section */
 
 
-#svgsteps-1{
+#svgsteps-1 {
   position: absolute;
   top: calc(-35%);
   left: 13%;
@@ -566,7 +561,7 @@ a:hover{
   z-index: 0;
 }
 
-#svgsteps-2{
+#svgsteps-2 {
   position: absolute;
   top: calc(-30%);
   left: 42%;
@@ -575,7 +570,7 @@ a:hover{
   z-index: -1;
 }
 
-#svgsteps-3{
+#svgsteps-3 {
   position: absolute;
   top: 50%;
   left: 90%;
@@ -584,7 +579,7 @@ a:hover{
   z-index: 0;
 }
 
-#svgsteps-4{
+#svgsteps-4 {
   position: absolute;
   top: 195%;
   left: 5%;
@@ -602,7 +597,6 @@ a:hover{
   margin: 0 auto;
   position: relative;
 }
-
 
 .image__organization {
   width: 100%;
@@ -627,7 +621,6 @@ a:hover{
   margin-left: 30px;
   margin-bottom: 35px;
   border-bottom: 1px solid #CDCDCD;
-  
 }
 
 .program-list {
@@ -648,16 +641,16 @@ a:hover{
 
 /* GALLERY section */
 
-.gallery{
+.gallery {
   margin: 0 auto;
 }
 
-.swiper{
+.swiper {
   max-width: 1146px;
   margin-bottom: 100px;
 }
 
-.gallery__section-container{
+.gallery__section-container {
   position: relative;
   display: flex;
   align-items: center;
@@ -694,15 +687,12 @@ a:hover{
   transform: translateY(-50%);
 }
 
-.swiper-button-prev-2:after{
+.swiper-button-prev-2:after,
+.swiper-button-next-2:after {
   font-size: 17px!important;
 }
 
-.swiper-button-next-2:after{
-  font-size: 17px!important;
-}
-
-.gallery__swiper-img{
+.gallery__swiper-img {
   width: 100%;
   height: 500px;
   border-radius: 10px;
@@ -728,39 +718,34 @@ a:hover{
 
 
 
-
 /* RECRUTATION section */
 
-.vectors__kids-recrutation{
+.vectors__kids-recrutation {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.vector-1__kids-recrutation{
+.vector-1__kids-recrutation {
   width: 459px;
   height: 100%;
   position: relative;
   padding-top: 100px;
 }
 
-.vector-1__kids-recrutation-img{
+.vector-1__kids-recrutation-img,
+.vector-2__kids-recrutation-img {
   width: 100%;
   position: absolute;
 }
 
-.vector-2__kids-recrutation{
+.vector-2__kids-recrutation {
   width: 422px;
   height: 100%;
   position: relative;
 }
 
-.vector-2__kids-recrutation-img{
-  width: 100%;
-  position: absolute;
-}
-
-.vector__kids-recrutation-title{
+.vector__kids-recrutation-title {
   position: relative;
   color: #FFFFFF;
   font-size: 40px;
@@ -773,7 +758,7 @@ a:hover{
   padding-bottom: 17px;
 }
 
-.vector__kids-recrutation-text{
+.vector__kids-recrutation-text {
   position: relative;
   color: #1E1E1C;
   font-size: 16px;
@@ -785,7 +770,7 @@ a:hover{
   padding-bottom: 40px;
 }
 
-.recrutation{
+.recrutation {
   background-image: url("/images/Recrutation section/background-recrutatation.svg");
   height: 970px;
   margin: 0 auto;
@@ -793,12 +778,12 @@ a:hover{
   background-size: cover;
 }
 
-.recrutation__section-container{
+.recrutation__section-container {
   max-width: 1146px;
   margin: 0 auto;
 }
 
-.recrutation__items{
+.recrutation__items {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 30px;
@@ -810,18 +795,18 @@ a:hover{
   text-align: center;
 }
 
-.recrutation__item{
+.recrutation__item {
   display: flex;
   flex-direction: column;
 }
 
-.recrutation__item-img{
+.recrutation__item-img {
   max-width: 100%;
   margin-bottom: 0;
   border-radius: 10px 10px 0 0;
 }
 
-.recrutation__item-text{
+.recrutation__item-text {
   color: #585756;
   font-size: 16px;
   font-weight: 400;
@@ -835,7 +820,7 @@ a:hover{
   text-align: center;
 }
 
-.recrutation__btn_children{
+.recrutation__btn_children {
   height: 46px;
   padding: 8px 24px;
   margin-bottom: 15px;
@@ -848,15 +833,13 @@ a:hover{
   font-weight: 500;
 }
 
-
-.recrutation__button{
+.recrutation__button {
   display: flex;
   justify-content: center;
   margin-bottom: 0rem;
 }
 
-
-.recrutation__btn{
+.recrutation__btn {
   height: 46px;
   padding: 8px 24px;
   margin-bottom: 15px;
@@ -869,28 +852,27 @@ a:hover{
   font-weight: 500;
 }
 
-.recrutation__btn:hover{
+.recrutation__btn:hover {
   background-color: #547E32;
   color: #FFFFFF;
 }
 
 
 
-
 /* DOCUMENTS section */
 
-.documents{
+.documents {
   margin-bottom: 100px;
 }
 
-.documents__items{
+.documents__items {
   display: grid;
   grid-template-columns: repeat(3, 362px);
   justify-content: center;
   gap: 30px;
 }
 
-.documents__item{
+.documents__item {
   padding: 20px;
   display: flex;
   flex-direction: column;
@@ -900,27 +882,27 @@ a:hover{
   align-items: center;
 }
 
-.documents__item-img{
+.documents__item-img {
   margin-bottom: 10px;
   border-radius: 8px;
   width: 100%;
 }
 
-.documents__item-title{
+.documents__item-title {
   font-size: 24px;
   color: #1E1E1C;
   margin-bottom: 5px;
   text-align: center;
 }
 
-.documents__item-text{
+.documents__item-text {
   font-size: 16px;
   color: #585756;
   margin-bottom: 79px;
   text-align: center;
 }
 
-.documents__item-btn{
+.documents__item-btn {
   font-size: 14px;
   font-weight: 500;
   padding: 11px;
@@ -933,39 +915,34 @@ a:hover{
   border-radius: 4px;
 }
 
-.documents__item-btn:hover{
+.documents__item-btn:hover {
   background-color: #547E32;
   color: #FFFFFF;
 }
 
 
 
-
 /* CONTACTS section */
 
-.vector-1__contacts{
+.vector-1__contacts {
   width: 559px;
   height: 100%;
   position: relative;
 }
 
-.vector-1__contacts-img{
+.vector-1__contacts-img,
+.vector-2__contacts-img {
   width: 100%;
   position: absolute;
 }
 
-.vector-2__contacts{
+.vector-2__contacts {
   width: 508px;
   height: 100%;
   position: relative;
 }
 
-.vector-2__contacts-img{
-  width: 100%;
-  position: absolute;
-}
-
-.vector__contacts-title{
+.vector__contacts-title {
   position: relative;
   color: #FFFFFF;
   left: 35px;
@@ -978,7 +955,7 @@ a:hover{
   width: 489px;
 }
 
-.vector__contacts-text{
+.vector__contacts-text {
   position: relative;
   color: #1E1E1C;
   font-size: 14px;
@@ -990,7 +967,7 @@ a:hover{
   padding-bottom: 21px;
 }
 
-.vector__contacts-text-end{
+.vector__contacts-text-end {
   position: relative;
   color: #1E1E1C;
   font-size: 14px;
@@ -1001,24 +978,24 @@ a:hover{
   top: 10px;
 }
 
-.vector-brown-contacts{
+.vector-brown-contacts {
   margin-left: 30px;
 }
 
-.vector-white-contacts{
+.vector-white-contacts {
   margin-left: 45px;
 }
 
-.vector-white-contacts-end{
+.vector-white-contacts-end {
   padding-left: -2px;
   margin-top: -20px;
 }
 
-.contacts__horizontal-card{
+.contacts__horizontal-card {
   position: relative;
 }
 
-#svglizard-2{
+#svglizard-2 {
   position: absolute;
   transform: translate(-50%, -50%);
   top: 120%;
@@ -1070,7 +1047,7 @@ a:hover{
   display: flex;
 }
 
-.contacts-information{
+.contacts-information {
   margin-left: 14px;
 }
 
@@ -1080,39 +1057,38 @@ i {
 
 
 
-
 /* FORM section */
 
-.vectors__for-form{
+.vectors__for-form {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.vector-1__recrutation{
+.vector-1__recrutation {
   width: 459px;
   height: 100%;
   position: relative;
 }
 
-.vector-1__recrutation-img{
+.vector-1__recrutation-img {
   width: 100%;
   position: absolute;
   margin-top: 237px;
 }
 
-.vector-2__recrutation{
+.vector-2__recrutation {
   width: 422px;
   height: 100%;
   position: relative;
 }
 
-.vector-2__form-recrutation-img{
+.vector-2__form-recrutation-img {
   width: 100%;
   position: absolute;
 }
 
-.vector__form-recrutation-title{
+.vector__form-recrutation-title {
   position: relative;
   color: #FFFFFF;
   font-size: 40px;
@@ -1126,7 +1102,7 @@ i {
   margin-top: 237px;
 }
 
-.vector__form-recrutation-text{
+.vector__form-recrutation-text {
   position: relative;
   color: #1E1E1C;
   font-size: 16px;
@@ -1151,7 +1127,7 @@ i {
   margin: 0 auto;
 }
 
-.tab-header{
+.tab-header {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1163,7 +1139,7 @@ i {
   margin: 0 auto;
 }
 
-.tab-header > div{
+.tab-header > div {
   width: 177px;
   height: 39px;
   padding-top: 7px;
@@ -1175,20 +1151,20 @@ i {
   line-height: 24px;
 }
 
-.tab-header > div.active{
+.tab-header > div.active {
   border: 1px solid #547E32;
   background-color: #547E32;
   border-radius: 20px;
   color: #FFFFFF;
 }
 
-.tab-body{
+.tab-body {
   position: relative;
   height: 630px;
   overflow: hidden;
 }
 
-.tab-body > div{
+.tab-body > div {
   position: absolute;
   width: 100%;
   top: -150vh;
@@ -1197,7 +1173,7 @@ i {
   transition: opacity 300ms ease-in-out 0ms;
 }
 
-.tab-body > div.active{
+.tab-body > div.active {
   top: 0;
   opacity: 1;
   transition: opacity 300ms ease-in-out 0ms;
@@ -1219,7 +1195,8 @@ i {
   margin-top: 8px;
 }
 
-.form-input input, .form-input-double input{
+.form-input input,
+.form-input-double input {
   height: 49px;
   display: flex;
   padding: 12px 16px;
@@ -1237,13 +1214,15 @@ i {
   line-height: 25.2px;
 }
 
-.form-input input:focus, .form-input-double:focus,
+.form-input input:focus, 
+.form-input-double:focus,
 .form-input textarea:focus {
   outline: none;
   border: 2px solid #547E32;
 }
 
-div .form-input label, .form-input-double label{
+div .form-input label,
+.form-input-double label {
   color: #1E1E1C;
   font-size: 14px;
   font-weight: 400;
@@ -1292,12 +1271,12 @@ div .form-input label, .form-input-double label{
   margin-left: 128px;
 }
 
-.form__button:hover{
+.form__button:hover {
   background-color: #547E32;
   color: #FFFFFF;
 }
 
-.form__text{
+.form__text {
   color: #1E1E1C;
   font-size: 16px;
   font-weight: 500;
@@ -1306,11 +1285,11 @@ div .form-input label, .form-input-double label{
   width: 460px;
 }
 
-.form__text-email{
+.form__text-email {
   text-decoration-line: underline;
 }
 
-.form__info-container{
+.form__info-container {
   display: flex;
 }
 
@@ -1365,7 +1344,6 @@ div .form-input label, .form-input-double label{
 
 
 
-
 /* Button UP */
 
 .text-button-up {
@@ -1401,7 +1379,6 @@ div .form-input label, .form-input-double label{
 
 
 
-
 /* RIGHTS section */
 
 .rights{
@@ -1416,7 +1393,6 @@ div .form-input label, .form-input-double label{
   line-height: 16px;
   padding: 14px 0 14px 150px;
 }
-
 
 
 
