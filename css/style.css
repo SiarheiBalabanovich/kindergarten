@@ -111,7 +111,7 @@ a:hover {
 /* MENU section */
 
 .menu {
-  background-image: url("images/Menu section/background-menu.svg");
+  background-image: url("../images/Menu section/background-menu.svg");
   height: 115px;
   background-size: cover;
 }
