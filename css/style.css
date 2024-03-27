@@ -312,7 +312,7 @@ a:hover {
 }
 
 .swiper-pagination-bullet-active {
-  background-image: url("/images/Hero section/pagination-active.svg");
+  background-image: url("../images/Hero section/pagination-active.svg");
 }
 
 .swiper-button-prev-1 {
@@ -472,7 +472,7 @@ a:hover {
 }
 
 .arrow {
-  background-image: url("/images/Offers section/arrow-down.svg");
+  background-image: url("../images/Offers section/arrow-down.svg");
   width: 24px;
   height: 24px;
   text-align: center;
@@ -484,7 +484,7 @@ a:hover {
 }
 
 .arrow.active {
-  background-image: url("/images/Offers section/arrow-down-active.svg");
+  background-image: url("../images/Offers section/arrow-down-active.svg");
 }
 
 .content__offers {
@@ -514,7 +514,7 @@ a:hover {
 /* QUOTE section */
 
 .quote {
-  background-image: url("/images/Quote section/background-quote.svg");
+  background-image: url("../images/Quote section/background-quote.svg");
   height: 585px;
   margin-bottom: 110px;
 }
@@ -630,7 +630,7 @@ a:hover {
 }
 
 .program-list li {
-  background-image: url('/images/Organization section/paragraph_program.svg');
+  background-image: url('../images/Organization section/paragraph_program.svg');
   background-repeat: no-repeat;
   background-size: 14px 16px;
   padding-left: 26px;
@@ -771,7 +771,7 @@ a:hover {
 }
 
 .recrutation {
-  background-image: url("/images/Recrutation section/background-recrutatation.svg");
+  background-image: url("../images/Recrutation section/background-recrutatation.svg");
   height: 970px;
   margin: 0 auto;
   margin-bottom: 100px;
@@ -1116,7 +1116,7 @@ i {
 }
 
 .tab-form {
-  background-image: url("/images/Feedback form/background-form.svg");
+  background-image: url("../images/Feedback form/background-form.svg");
   height: 1160px;
   margin: 0 auto;
   background-size: cover;
@@ -1364,7 +1364,7 @@ div .form-input label,
 }
 
 .button-up {
-  background-image: url('/images/Button UP/button-up.svg');
+  background-image: url('../images/Button UP/button-up.svg');
   width: 40px;
   height: 40px;
   border-radius: 100%;
@@ -1374,7 +1374,7 @@ div .form-input label,
 }
 
 .button-up:hover {
-  background-image: url('/images/Button UP/button-up-active.svg');
+  background-image: url('../images/Button UP/button-up-active.svg');
 }
 
 
@@ -1803,7 +1803,7 @@ div .form-input label,
     left: 68%;
   }
   .quote {
-    background-image: url("/images/Quote section/background-quote-mobile.png");
+    background-image: url("../images/Quote section/background-quote-mobile.png");
     width: 100%;
     height: 357px;
   }
@@ -1899,7 +1899,7 @@ div .form-input label,
     margin-bottom: 0;
   }
   .recrutation {
-    background-image: url("/images/Recrutation section/background-recrutation-mobile.svg");
+    background-image: url("../images/Recrutation section/background-recrutation-mobile.svg");
     height: auto;
     margin-bottom: 76px;
     background-size: cover cover;
@@ -2049,7 +2049,7 @@ div .form-input label,
     width: 201px;
   }
   .tab-form-mobile {
-    background-image: url("/images/Feedback form/background-form-mobile.svg");
+    background-image: url("../images/Feedback form/background-form-mobile.svg");
     width: 100%;
     background-size: cover;
   }
