@@ -1,6 +1,5 @@
 'use strict'
 
-
 // MENU section
 document.addEventListener("DOMContentLoaded", function () {
   const burgerCheckbox = document.getElementById("burger");
@@ -15,7 +14,7 @@ document.addEventListener("DOMContentLoaded", function () {
       burgerCheckbox.checked = false;
       // If the logo has been changed, return it to the main one
       if (logoChanged) {
-        logoImage.src = "images/UI/Homepage/Logo/Menu/logo.svg"; // Path to main logo
+        logoImage.src = "images/Menu section/logo.svg"; // Path to main logo
         logoChanged = false;
       }
     });
@@ -31,7 +30,7 @@ document.addEventListener("DOMContentLoaded", function () {
     burgerCheckbox.checked = false;
     // If the logo has been changed, return it to the main one
     if (logoChanged) {
-      logoImage.src = "images/UI/Homepage/Logo/Menu/logo.svg"; // Path to main logo
+      logoImage.src = "images/Menu section/logo.svg"; // Path to main logo
       logoChanged = false;
     }
   });
@@ -40,15 +39,14 @@ document.addEventListener("DOMContentLoaded", function () {
   burgerCheckbox.addEventListener("change", function () {
     if (burgerCheckbox.checked) {
       // When activating the burger menu, change the logo
-      logoImage.src = "images/Logo-2.svg"; // Path to the new logo
-      logoChanged = true; // Setting the logo change flag
+      logoImage.src = "images/Menu section/logo-2.svg"; // Path to the new logo
+      logoChanged = false; // Setting the logo change flag
     } else if (!logoChanged) {
       // When the burger menu is deactivated and if the logo has not been changed, we return the main logo
-      logoImage.src = "images/UI/Homepage/Logo/Menu/logo.svg"; // Path to main logo
+      logoImage.src = "images/Menu section/logo.svg"; // Path to main logo
     }
   });
 });
-
 
 
 
@@ -72,98 +70,88 @@ const swiper = new Swiper('.information__slider', {
 
 
 
-
 // OFFERS section (for large screens)
-function toggleItem(index) {
-  const contentContainers = document.querySelectorAll('.content__offers');
-  const items = document.querySelectorAll('.item');
-  const arrows = document.querySelectorAll('.arrow');
-  const mainImage = document.getElementById('mainImage');
+function toggleItemOffers(clickedItem) {
+  const currentSection = clickedItem.closest('.offers__section-container');
+  const contentContainers = currentSection.querySelectorAll('.content__offers');
+  const items = currentSection.querySelectorAll('.item');
+  const arrows = currentSection.querySelectorAll('.arrow');
+  const mainImage = currentSection.querySelector('.image__offers');
+  const index = Array.from(items).indexOf(clickedItem) + 1;
 
-  for (let i = 0; i < contentContainers.length; i++) {
-    const content = contentContainers[i];
+  contentContainers.forEach((content, i) => {
     const item = items[i];
     const arrow = arrows[i];
 
-    if ((i + 1) === index) {
+    if (i + 1 === index) {
+      // Toggle the visibility of the clicked item
       const isOpen = content.classList.contains('active');
-      if (isOpen) {
-        content.style.maxHeight = '0';
-        content.classList.remove('active');
-        item.classList.remove('active');
-        arrow.classList.remove('active');
-        arrow.classList.remove('collapsed');
-      } else {
-        content.style.maxHeight = content.scrollHeight + 'px';
-        content.classList.add('active');
-        item.classList.add('active');
-        arrow.classList.add('active');
-        arrow.classList.add('collapsed');
-      }
+      content.style.maxHeight = isOpen ? '0' : content.scrollHeight + 'px';
+      content.classList.toggle('active');
+      item.classList.toggle('active');
+      arrow.classList.toggle('active');
+      arrow.classList.toggle('collapsed');
     } else {
-      content.style.maxHeight = '0';
+      // Close other items
+      content.style.maxHeight = null;
       content.classList.remove('active');
       item.classList.remove('active');
       arrow.classList.remove('active');
       arrow.classList.remove('collapsed');
     }
-  }
+  });
 
-  switch (index) {
-    case 1:
-      mainImage.src = 'images/Offers section/Offers section - photo-1.jpg';
-      break;
-    case 2:
-      mainImage.src = 'images/Offers section/Offers section - photo-2.jpg';
-      break;
-    case 3:
-      mainImage.src = 'images/Offers section/Offers section - photo-3.jpg';
-      break;
-    case 4:
-      mainImage.src = 'images/Offers section/Offers section - photo-4.jpg';
-      break;
-    case 5:
-      mainImage.src = 'images/Offers section/Offers section - photo-5.jpg';
-      break;
+  // Update src for the main image in the current section
+  if (mainImage) {
+    mainImage.src = `images/Offers section/Offers - photo-${index}.jpg`;
   }
 }
 
 
 
+// ORGANIZATION section (for large screens)
+function toggleItemOrganization(clickedItem) {
+  const currentSection = clickedItem.closest('.organization__section-container');
+  const contentContainers = currentSection.querySelectorAll('.content__organization');
+  const items = currentSection.querySelectorAll('.item');
+  const arrows = currentSection.querySelectorAll('.arrow');
+  const mainImage = currentSection.querySelector('.image__organization');
+  const index = Array.from(items).indexOf(clickedItem) + 1;
 
-// ORGANIZATION section
-const tabItem = document.querySelectorAll('.tabs__btn-item');
-const tabContent = document.querySelectorAll('.tabs__content-item');
+  contentContainers.forEach((content, i) => {
+    const item = items[i];
+    const arrow = arrows[i];
 
-tabItem.forEach(function(element){
-    element.addEventListener('click', open);
-});
+    if (i + 1 === index) {
+      const isOpen = content.classList.contains('active');
+      content.style.maxHeight = isOpen ? '0' : content.scrollHeight + 'px';
+      content.classList.toggle('active');
+      item.classList.toggle('active');
+      arrow.classList.toggle('active');
+      arrow.classList.toggle('collapsed');
+    } else {
+      content.style.maxHeight = null;
+      content.classList.remove('active');
+      item.classList.remove('active');
+      arrow.classList.remove('active');
+      arrow.classList.remove('collapsed');
+    }
+  });
 
-function open(evt){
-    const tabTarget = evt.currentTarget;
-    const button = tabTarget.dataset.button;
-
-    tabItem.forEach(function(item){
-        item.classList.remove('tabs__btn-item--active');
-    });
-
-    tabContent.forEach(function(item){
-        item.classList.remove('tabs__content-item--active');
-    });
-
-    tabTarget.classList.add('tabs__btn-item--active');
-    document.querySelector(`#${button}`).classList.add('tabs__content-item--active');
+  if (mainImage) {
+    mainImage.src = `images/Organization section/Organization - photo-${index}.jpg`;
+  }
 }
 
 
 
-
-// GALLERY section (slider)
+// GALLERY section
 var myswiper = new Swiper(".swiper", {
   effect: "coverflow",
   grabCursor: true,
   centeredSlides: true,
   slidesPerView: 2,
+  initialSlide: 1,
   speed: 1500,
   coverflowEffect: {
     rotate: 0,
@@ -178,7 +166,7 @@ var myswiper = new Swiper(".swiper", {
     clickable: true,
     dynamicBullets: true,
   },
-    navigation: {
+  navigation: {
     nextEl: '.swiper-button-next-2',
     prevEl: '.swiper-button-prev-2',
   },
@@ -219,34 +207,54 @@ swiperButtonNext.addEventListener('click', function() {
 
 
 
+// FUNCTION TO SCROLL PAGE UP
+function scrollToTop() {
+  window.scrollTo({ top: 0, behavior: "smooth" });
+}
 
-// TEAM section 
-document.addEventListener('DOMContentLoaded', function () {
-  // Getting the “Zobacz więcej” button by ID
-  const seeMoreButton = document.getElementById('seeMoreButton');
-  // Getting all cards
-  const allTeamCards = document.querySelectorAll('[class^="team-card-"]');
-  // Hide all cards except the first 3
-  allTeamCards.forEach(function (card, index) {
-    if (index >= 9) {
-      card.style.display = 'none';
-    }
-  });
+// Adding a click handler for large screens
+const scrollToTopButtonLG = document.getElementById("scroll-to-top-lg");
+if (scrollToTopButtonLG) { // Checking if a button exists for large screens
+  scrollToTopButtonLG.addEventListener("click", scrollToTop);
+}
 
-  // Adding an event handler to the "Zobacz więcej" button
-  seeMoreButton.addEventListener('click', function () {
-    // Show other cards
-    allTeamCards.forEach(function (card, index) {
-      if (index >= 3) {
-        card.style.display = 'block';
-      }
-    });
+// Adding a click handler for small screens
+const scrollToTopButtonSM = document.getElementById("scroll-to-top-sm");
+if (scrollToTopButtonSM) { // Checking if a button exists for small screens
+  scrollToTopButtonSM.addEventListener("click", scrollToTop);
+}
 
-    // Hide the "Zobacz więcej" button after showing all cards
-    seeMoreButton.style.display = 'none';
-  });
+
+// CALENDAR (feedback form)
+flatpickr(".datepicker", {
+  clickOpens: true,
+  dateFormat: "Y-m-d",
+  locale: "pl",
 });
 
+
+// FILE UPLOAD (feedback form)
+// Handlers for the desktop version
+document.getElementById("file-upload-field-desktop").addEventListener("change", function() {
+  var fileName = this.files[0].name;
+  document.getElementById('file-name-display-desktop').textContent = fileName ? fileName : "Nie wybrano pliku";
+});
+
+document.getElementById("file-upload-button-desktop").addEventListener("click", function(event) {
+  event.preventDefault();
+  document.getElementById("file-upload-field-desktop").click();
+});
+
+// Handlers for the mobile version
+document.getElementById("file-upload-field-mobile").addEventListener("change", function() {
+  var fileName = this.files[0].name;
+  document.getElementById('file-name-display-mobile').textContent = fileName ? fileName : "Nie wybrano pliku";
+});
+
+document.getElementById("file-upload-button-mobile").addEventListener("click", function(event) {
+  event.preventDefault();
+  document.getElementById("file-upload-field-mobile").click();
+});
 
 
 
@@ -294,19 +302,19 @@ function toggleMobileBlocks(isBlock2) {
   tabBodyElementsMobile[1].classList.toggle("active", isBlock2);
   tabBodyElementsMobile[0].classList.toggle("active", !isBlock2);
 }
-toggleForms(window.innerWidth <= 768, true);
-toggleBlocks(true); // Show block 2 in large form by default
-toggleMobileBlocks(true); // Show block 2 in mobile form by default
+toggleForms(window.innerWidth <= 768, false);
+toggleBlocks(false); // Show block 2 in large form by default
+toggleMobileBlocks(false); // Show block 2 in mobile form by default
 // Adding a browser window resize event listener for a large form
 window.addEventListener("resize", function () {
-  toggleForms(window.innerWidth <= 768, true);
-  toggleBlocks(true); // Show block 2 in large form after resizing screen
+  toggleForms(window.innerWidth <= 768, false);
+  toggleBlocks(false); // Show block 2 in large form after resizing screen
 });
 
 // Adding a browser window resize event listener for the mobile form
 window.addEventListener("resize", function () {
-  toggleForms(window.innerWidth <= 768, true);
-  toggleMobileBlocks(true); // Show block 2 in mobile form after resizing screen
+  toggleForms(window.innerWidth <= 768, false);
+  toggleMobileBlocks(false); // Show block 2 in mobile form after resizing screen
 });
 
 // Adding a click event listener to toggle buttons for a mobile form amd blocks
@@ -328,6 +336,7 @@ tabHeaderElements[0].addEventListener("click", function () {
 tabHeaderElements[1].addEventListener("click", function () {
   toggleBlocks(true); // Show block 2 in large form
 });
+
 
 // For button on large screens
 document.getElementById('largeScreenButton').addEventListener('click', function() {
@@ -359,67 +368,12 @@ document.querySelector('.button__menu[onclick="window.location.href=\'#recrutati
   }
 });
 
-flatpickr(".datepicker", {
-  dateFormat: "Y-m-d",
-  locale: "pl",
-});
+function scrollToRecrutationForm() {
+  var targetElementId = window.innerWidth <= 768 ? 'recrutationSmall' : 'recrutationLarge';
 
-document.getElementById("file-upload-field").addEventListener("change", function () {
-  var fileName = this.value.split("\\").pop();
-  var button = document.getElementById("file-upload-button");
-  button.textContent = fileName ? fileName : "Wybierz plik";
-});
+  const targetElement = document.getElementById(targetElementId);
 
-
-
-
-// FUNCTION TO SCROLL PAGE UP
-function scrollToTop() {
-  window.scrollTo({ top: 0, behavior: "smooth" });
-}
-
-// Adding a click handler for large screens
-const scrollToTopButtonLG = document.getElementById("scroll-to-top-lg");
-if (scrollToTopButtonLG) { // Checking if a button exists for large screens
-  scrollToTopButtonLG.addEventListener("click", scrollToTop);
-}
-
-// Adding a click handler for small screens
-const scrollToTopButtonSM = document.getElementById("scroll-to-top-sm");
-if (scrollToTopButtonSM) { // Checking if a button exists for small screens
-  scrollToTopButtonSM.addEventListener("click", scrollToTop);
-}
-
-
-
-
-// FEEDBACK FORM (JQUERY)
-jQuery(document).ready(function () {
-
-  $(".phone").mask("+48 (99) 999-99-99");
-
-jQuery('.send-form').click( function() {
-  var form = jQuery(this).closest('form');
-
-  if ( form.valid() ) {
-    form.css('opacity','.5');
-    var actUrl = form.attr('action');
-
-    jQuery.ajax({
-      url: actUrl,
-      type: 'post',
-      dataType: 'html',
-      data: form.serialize(),
-      success: function(data) {
-        form.html(data);
-        form.css('opacity','1');
-        //form.find('.status').html('Dziękujemy, formularz został wysłany!');
-        //$('#myModal').modal('show') // for bootstrap
-      },
-      error:	 function() {
-        form.find('.status').html('Błąd serwera');
-      }
-    });
+  if (targetElement) {
+    targetElement.scrollIntoView({ behavior: 'smooth' });
   }
-});
-});
+}
