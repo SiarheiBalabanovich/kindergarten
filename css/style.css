@@ -1255,6 +1255,29 @@ div .form-input label,
   border: 2px solid #547E32; 
 }
 
+.datepicker-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 400px;
+}
+
+.datepicker-icon {
+  position: absolute;
+  left: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  pointer-events: none;
+  width: 24px;
+  height: 24px;
+}
+
+.form-input-double .datepicker-input {
+  -webkit-appearance: none;
+  padding-left: 40px;
+  width: 100%;
+}
+
 .form__button {
   display: flex;
   height: 46px;
@@ -1319,27 +1342,6 @@ div .form-input label,
 .custom-file-button:active {
   background-color: #547E32;
   color: #FFFFFF;
-}
-
-.datepicker-wrapper {
-  position: relative;
-  display: flex;
-  align-items: center;
-  width: 400px;
-}
-
-.datepicker-icon {
-  position: absolute;
-  left: 12px;
-  top: 50%;
-  transform: translateY(-50%);
-  pointer-events: none;
-  width: 24px;
-  height: 24px;
-}
-
-.form-input-double .datepicker-input {
-  padding-left: 40px;
 }
 
 
