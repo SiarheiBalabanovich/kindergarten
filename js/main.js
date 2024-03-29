@@ -258,86 +258,6 @@ document.getElementById("file-upload-button-mobile").addEventListener("click", f
 
 
 
-// // FEEDBACK FORM
-// let tab = document.querySelector(".tab-form"); // For form on large screens
-// let tabMobile = document.querySelector(".tab-form-mobile"); // For form on mobile screens
-// let tabHeaderElements = document.querySelectorAll(".tab-header > div");
-// let tabBodyElements = document.querySelectorAll(".tab-body > div");
-// let tabHeaderElementsMobile = document.querySelectorAll(".tab-header-mobile > div");
-// let tabBodyElementsMobile = document.querySelectorAll(".tab-body-mobile > div");
-
-// // Function for switching between shapes and blocks on large screens
-// function toggleForms(isMobile, isBlock2) {
-//   if (isMobile) {
-//     tab.style.display = "none";
-//     tabMobile.style.display = "block";
-// // If isBlock2 is true, show block 2, otherwise block 1 in the mobile form
-//     if (isBlock2) {
-//       tabBodyElementsMobile[1].style.display = "block";
-//       tabBodyElementsMobile[0].style.display = "none";
-//     } else {
-//       tabBodyElementsMobile[0].style.display = "block";
-//       tabBodyElementsMobile[1].style.display = "none";
-//     }
-// // Remove the active class from the mobile form headers and add it to the current header
-//     tabHeaderElementsMobile[0].classList.remove("active");
-//     tabHeaderElementsMobile[1].classList.remove("active");
-//     tabHeaderElementsMobile[isBlock2 ? 1 : 0].classList.add("active");
-//   } else {
-//     tab.style.display = "block";
-//     tabMobile.style.display = "none";
-//   }
-// }
-// // Function for switching between blocks on large screens
-// function toggleBlocks(isBlock2) {
-//   tabBodyElements[1].classList.toggle("active", isBlock2);
-//   tabBodyElements[0].classList.toggle("active", !isBlock2);
-// // Remove the active class from the large form headers and add it to the current header
-//   tabHeaderElements[0].classList.remove("active");
-//   tabHeaderElements[1].classList.remove("active");
-//   tabHeaderElements[isBlock2 ? 1 : 0].classList.add("active");
-// }
-// // Function for switching between blocks on mobile screens
-// function toggleMobileBlocks(isBlock2) {
-//   tabBodyElementsMobile[1].classList.toggle("active", isBlock2);
-//   tabBodyElementsMobile[0].classList.toggle("active", !isBlock2);
-// }
-// toggleForms(window.innerWidth <= 768, false);
-// toggleBlocks(false); // Show block 2 in large form by default
-// toggleMobileBlocks(false); // Show block 2 in mobile form by default
-// // Adding a browser window resize event listener for a large form
-// window.addEventListener("resize", function () {
-//   toggleForms(window.innerWidth <= 768, false);
-//   toggleBlocks(false); // Show block 2 in large form after resizing screen
-// });
-
-// // Adding a browser window resize event listener for the mobile form
-// window.addEventListener("resize", function () {
-//   toggleForms(window.innerWidth <= 768, false);
-//   toggleMobileBlocks(false); // Show block 2 in mobile form after resizing screen
-// });
-
-// // Adding a click event listener to toggle buttons for a mobile form amd blocks
-// tabHeaderElementsMobile[0].addEventListener("click", function () {
-//   toggleForms(true, false); // Switch to mobile form and show block 1
-//   toggleMobileBlocks(false); // Show block 1 in mobile form
-// });
-
-// tabHeaderElementsMobile[1].addEventListener("click", function () {
-//   toggleForms(true, true); // Switch to mobile form and show block 2
-//   toggleMobileBlocks(true); // Show block 2 in mobile form
-// });
-
-// // Adding a click event listener to toggle buttons for a large form
-// tabHeaderElements[0].addEventListener("click", function () {
-//   toggleBlocks(false); // Show block 1 in large form
-// });
-
-// tabHeaderElements[1].addEventListener("click", function () {
-//   toggleBlocks(true); // Show block 2 in large form
-// });
-
-
 // FEEDBACK FORM
 let tab = document.querySelector(".tab-form"); // For form on large screens
 let tabMobile = document.querySelector(".tab-form-mobile"); // For form on mobile screens
@@ -379,11 +299,11 @@ function toggleMobileBlocks(isBlock2) {
 // Initialize forms display based on screen width
 toggleForms(window.innerWidth <= 768);
 
-// Initially show "Rekrutacja do zespołu" form content for mobile
+// Initially show "Rekrutacja dzieci" form content for all devices
 if (window.innerWidth <= 768) {
-  toggleMobileBlocks(1); // 1 refers to the second form, adjust index as needed
+  toggleMobileBlocks(0); // 0 refers to the first form, "Rekrutacja dzieci"
 } else {
-  // Optionally, set default visible form for large screens
+  // For large screens, also show "Rekrutacja dzieci" by default
   toggleBlocks(0); // Assuming the first form is default for large screens
 }
 
@@ -400,7 +320,6 @@ tabHeaderElements.forEach((element, index) => {
     toggleBlocks(index === 1);
   });
 });
-
 
 
 // For button on large screens
