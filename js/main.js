@@ -257,7 +257,6 @@ document.getElementById("file-upload-button-mobile").addEventListener("click", f
 });
 
 
-
 // FEEDBACK FORM
 let tab = document.querySelector(".tab-form"); // For form on large screens
 let tabMobile = document.querySelector(".tab-form-mobile"); // For form on mobile screens
@@ -325,28 +324,6 @@ tabHeaderElements.forEach((element, index) => {
 // For button on large screens
 document.getElementById('largeScreenButton').addEventListener('click', function() {
   const targetElement = document.getElementById('recrutationLarge'); // Replacement with element id on large screens
-  if (targetElement) {
-    targetElement.scrollIntoView({ behavior: 'smooth' });
-  }
-});
-
-document.getElementById('secondSectionButton').addEventListener('click', function() {
-  const targetElement = document.getElementById('secondSection'); // Using the id of the second section
-  if (targetElement) {
-    targetElement.scrollIntoView({ behavior: 'smooth' });
-  }
-});
-
-document.getElementById('thirdSectionButton').addEventListener('click', function() {
-  const targetElement = document.getElementById('thirdSection'); // Using the id of the third section
-  if (targetElement) {
-    targetElement.scrollIntoView({ behavior: 'smooth' });
-  }
-});
-
-// For button on small screens
-document.querySelector('.button__menu[onclick="window.location.href=\'#recrutationSmall\'"]').addEventListener('click', function() {
-  const targetElement = document.getElementById('recrutationSmall'); // Using an existing element ID on small screens
   if (targetElement) {
     targetElement.scrollIntoView({ behavior: 'smooth' });
   }
