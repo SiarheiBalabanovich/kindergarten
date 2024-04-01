@@ -18,14 +18,14 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             case 'childRecruitment':
                 $firstName = htmlspecialchars(filter_input(INPUT_POST, 'loginFirstName', FILTER_SANITIZE_STRING), ENT_QUOTES, 'UTF-8');
                 $lastName = htmlspecialchars(filter_input(INPUT_POST, 'loginLastName', FILTER_SANITIZE_STRING), ENT_QUOTES, 'UTF-8');
-                $birthDate = htmlspecialchars(filter_input(INPUT_POST, 'birthDate', FILTER_SANITIZE_STRING), ENT_QUOTES, 'UTF-8');
-                $adaptationStartDate = htmlspecialchars(filter_input(INPUT_POST, 'adaptationStartDate', FILTER_SANITIZE_STRING), ENT_QUOTES, 'UTF-8');
+                $birthDate = htmlspecialchars(filter_input(INPUT_POST, 'loginBirthDate', FILTER_SANITIZE_STRING), ENT_QUOTES, 'UTF-8');
+                $adaptationDate = htmlspecialchars(filter_input(INPUT_POST, 'loginAdaptationDate', FILTER_SANITIZE_STRING), ENT_QUOTES, 'UTF-8');
                 $contactPerson = htmlspecialchars(filter_input(INPUT_POST, 'loginContactPerson', FILTER_SANITIZE_STRING), ENT_QUOTES, 'UTF-8');
                 $phone = htmlspecialchars(filter_input(INPUT_POST, 'loginPhone', FILTER_SANITIZE_STRING), ENT_QUOTES, 'UTF-8');
                 $message = htmlspecialchars(filter_input(INPUT_POST, 'loginText', FILTER_SANITIZE_STRING), ENT_QUOTES, 'UTF-8');
                 // Additional processing of specific fields and checks
                 if (empty($firstName) || empty($lastName) || empty($birthDate) || 
-                    empty($adaptationStartDate) || empty($contactPerson) ||
+                    empty($adaptationDate) || empty($contactPerson) ||
                     empty($phone) || empty($email) || empty($message)) {
                     $errors[] = "Wszystkie pola formularza są obowiązkowe.";
                 }
@@ -85,7 +85,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             "Imię dziecka: $firstName\n
             Nazwisko dziecka: $lastName\n
             Data urodzenia dziecka: $birthDate\n
-            Data planowanego rozpoczęcia adaptacji: $adaptationStartDate\n
+            Data planowanego rozpoczęcia adaptacji: $adaptationDate\n
             Osoba do kontaktu: $contactPerson\n
             Numer telefonu do kontaktu: $phone\n
             Email: $email\n
