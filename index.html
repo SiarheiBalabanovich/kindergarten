@@ -19,7 +19,6 @@
   <body>
 
 
-
 <section class="top-section">
       <div class="container">
       <div class="top__section-container">
@@ -57,7 +56,6 @@
     </div>
   </div>
 </section>
-
 
 
 <section class="menu" id="up">
@@ -127,7 +125,6 @@
     </div>
   </div>
 </section>
-
 
 
 <section class="information">
@@ -238,7 +235,6 @@
 </section>
 
 
-
 <section class="offers" id="offers">
       <div class="container">
         <img id="svglizard-mobile" src="images/Offers section/offers-lizard-mobile.svg" alt="lizard mobile">
@@ -335,7 +331,6 @@
 </section>
 
 
-
 <section class="quote">
   <div class="container">
     <div class="quote__montessori-text-wrapper">
@@ -346,7 +341,6 @@
     <img id="svgsquirrel" src="images/Quote section/quote-squirrel-mobile.svg" alt="squirrel mobile">
   </div>
 </section>
-
 
 
 <section class="organization" id="organization">
@@ -464,7 +458,6 @@
 <img id="steps-mobile-1" src="images/Organization section/steps-mobile-1.svg" alt="steps mobile">
 
 
-
 <section class="gallery">
       <div class="container">
         <div class="gallery__section-container">
@@ -549,7 +542,6 @@
 <img id="steps-mobile-2" src="images/Gallery section/steps-mobile-2.svg" alt="steps mobile">
 
 
-
 <section class="recrutation" id="recrutation-description">
   <div class="container">
       <div class="recrutation__section-container">
@@ -631,7 +623,6 @@
 </section>
 
 
-
 <section class="documents" id="documents">
   <div class="container">
     <div class="vector">
@@ -669,7 +660,6 @@
     </div>
   </div>
 </section>
-
 
 
 <section class="quote">
@@ -761,7 +751,6 @@
 </section>
 
 
-
 <section class="tab-form-mobile">
   <div class="container">
     <div class="form__section-container">
@@ -788,65 +777,67 @@
       </div>
       <div class="tab-body-mobile">
         <div class="login">
+        <form action="process_form.php" method="post" enctype="multipart/form-data">
+          <input type="hidden" name="formType" value="childRecruitment">
           <div class="form-row">
             <div class="form-input-double">
-              <label for="loginFirstName">Imię dziecka</label>
-                <input id="loginFirstName" name="loginFirstName" 
+              <label for="loginFirstName-mobile">Imię dziecka</label>
+                <input id="loginFirstName-mobile" name="loginFirstName"
                 class="form-input-double" type="text" placeholder="Wpisz imię">
             </div>
           </div>
             <div class="form-row">
             <div class="form-input-double">
-              <label for="loginLastName">Nazwisko dziecka</label>
-                <input id="loginLastName" name="loginLastName" 
+              <label for="loginLastName-mobile">Nazwisko dziecka</label>
+                <input id="loginLastName-mobile" name="loginLastName" 
                 class="form-input-double" type="text" placeholder="Wpisz nazwisko">
             </div>
           </div>
           <div class="form-row">
           <div class="form-input-double">
-            <label for="loginFirstName">Osoba do kontaktu</label>
-                <input id="loginFirstName" name="loginFirstName" 
+            <label for="loginContactPerson-mobile">Osoba do kontaktu</label>
+                <input id="loginContactPerson-mobile" name="loginContactPerson" 
                 class="form-input-double" type="text" placeholder="Wpisz imię i nazwisko">
           </div>
         </div>
         <div class="form-row">
         <div class="form-input-double">
-          <label for="loginDate">Data urodzenia dziecka</label>
+          <label for="loginBirthDate-mobile">Data urodzenia dziecka</label>
           <div class="datepicker-wrapper">
             <img src="images/Feedback form/calendar-clear.svg" alt="calendar-clear icon" 
-            class="datepicker-icon"> <input id="loginDate" name="loginDate" 
+            class="datepicker-icon"> <input id="loginBirthDate-mobile" name="loginBirthDate"
             class="datepicker datepicker-input" type="text" placeholder="Wybierz datę urodzenia dziecka">
           </div>
         </div>
       </div>
       <div class="form-row">
         <div class="form-input-double">
-          <label for="loginDate">Data planowanego rozpoczęcia adaptacji</label>
+          <label for="loginAdaptationDate-mobile">Data planowanego rozpoczęcia adaptacji</label>
           <div class="datepicker-wrapper">
             <img src="images/Feedback form/calendar.svg" alt="calendar icon" class="datepicker-icon">
-            <input id="loginDate" name="loginDate" 
+            <input id="loginAdaptationDate-mobile" name="loginAdaptationDate"
             class="datepicker datepicker-input" type="text" placeholder="Wybierz datę">
           </div>
         </div>
       </div>
         <div class="form-row">
         <div class="form-input-double">
-          <label for="loginPhone">Numer telefonu do kontaktu</label>
-          <input id="loginPhone" name="loginPhone" 
+          <label for="loginPhone-mobile">Numer telefonu do kontaktu</label>
+          <input id="loginPhone-mobile" name="loginPhone" 
           class="form-input-double" type="text" placeholder="xxx-xxx-xxx">
         </div>
       </div>
       <div class="form-row">
         <div class="form-input">
-            <label for="loginEmail">Adres e-mail do kontaktu</label>
-            <input id="loginEmail" name="loginEmail" 
+            <label for="loginEmail-mobile">Adres e-mail do kontaktu</label>
+            <input id="loginEmail-mobile" name="loginEmail" 
             class="form-input" type="email" placeholder="Wpisz swój adres e-mail">
         </div>
     </div>
     <div class="form-row">
       <div class="form-input">
-        <label for="loginText">Twoja wiadomość do przedszkola leśna droga</label>
-        <textarea id="loginText" name="loginText" cols="30" rows="10" 
+        <label for="loginText-mobile">Twoja wiadomość do przedszkola leśna droga</label>
+        <textarea id="loginText-mobile" name="loginText" cols="30" rows="10" 
         placeholder="Wpisz tutaj swoją wiadomość..."></textarea>
       </div>
     </div>
@@ -858,38 +849,41 @@
           a.pluska@lesnadroga.edu.pl
         </a>
       </div>
-    <button name="loginSubmit" id="loginSubmitButton" 
+    <button name="loginSubmit" id="loginSubmitButton-mobile" 
     class="form__button" type="submit">Wyślij wiadomość</button>
     </div>
   </div>
+        </form>
   </div>
 
         <div class="signup active">
+          <form action="process_form.php" method="post" enctype="multipart/form-data">
+          <input type="hidden" name="formType" value="teamRecruitment">
           <div class="form-row">
             <div class="form-input-double">
-            <label for="signupFirstName">Imię</label>
-            <input id="signupFirstName" name="signupFirstName" 
+            <label for="signupFirstName-mobile">Imię</label>
+            <input id="signupFirstName-mobile" name="signupFirstName" 
             class="form-input-double" type="text" placeholder="Wpisz imię">
             </div>
           </div>
             <div class="form-row">
             <div class="form-input-double">
-            <label for="signupLastName">Nazwisko</label>
-            <input id="signupLastName" name="signupLastName" 
+            <label for="signupLastName-mobile">Nazwisko</label>
+            <input id="signupLastName-mobile" name="signupLastName" 
             class="form-input-double" type="text" placeholder="Wpisz nazwisko">
           </div>
           </div>
           <div class="form-row">
           <div class="form-input">
-            <label for="signupEmail">Adres e-mail do kontaktu</label>
-            <input id="signupEmail" name="signupEmail" 
+            <label for="signupEmail-mobile">Adres e-mail do kontaktu</label>
+            <input id="signupEmail-mobile" name="signupEmail" 
             class="form-input" type="email" placeholder="Wpisz swój adres e-mail">
           </div>
         </div>
         <div class="form-row">
           <div class="form-input-double">
-            <label for="signupPhone">Numer telefonu</label>
-            <input id="signupPhone" name="signupPhone" 
+            <label for="signupPhone-mobile">Numer telefonu</label>
+            <input id="signupPhone-mobile" name="signupPhone" 
             class="form-input-double" type="text" placeholder="xxx-xxx-xxx">
           </div>
         </div>
@@ -905,8 +899,8 @@
             </div>
           <div class="form-row">
             <div class="form-input">
-              <label for="signupText">Twoja wiadomość do przedszkola leśna droga</label>
-              <textarea id="signupText" name="signupText" cols="30" rows="10" 
+              <label for="signupText-mobile">Twoja wiadomość do przedszkola leśna droga</label>
+              <textarea id="signupText-mobile" name="signupText" cols="30" rows="10" 
               placeholder="Wpisz tutaj swoją wiadomość..."></textarea>
             </div>
           </div>
@@ -918,19 +912,19 @@
               a.pluska@lesnadroga.edu.pl
             </a>
           </div>
-          <button name="signupSubmit" id="signupSubmitButton" 
+          <button name="signupSubmit" id="signupSubmitButton-mobile" 
           class="form__button" type="submit">Wyślij wiadomość</button>
         </div>
           </div>
+          </form>
       </div>
-      </div>
+    </div>
     </div>
     </div>
     <div class="centered-button-container">
       <div class="button-up" id="scroll-to-top-sm"></div>
     </div>
 </section>
-
 
 
 <section class="tab-form" id="recrutationLarge">
@@ -953,69 +947,70 @@
                 Jeden z naszych współpracowników skontaktuje się z Tobą tak szybko, jak to możliwe</p>
           </div>
       </div>
-      <div class="tab-header" id="secondSection">
+        <div class="tab-header" id="secondSection">
           <div class="no-active" id="recrutationForm">Rekrutacja dzieci</div>
           <div class="active" id="thirdSection">Rekrutacja do zespołu</div>
       </div>
       <div class="tab-body">
           <div class="login">
-            <form id="loginForm" action="process_form.php" method="post" enctype="multipart/form-data">
+          <form action="process_form.php" method="post" enctype="multipart/form-data">
+            <input type="hidden" name="formType" value="childRecruitment">
                   <div class="form-row">
                       <div class="form-input-double">
-                          <label for="loginFirstName">Imię dziecka</label>
-                          <input id="loginFirstName" name="loginFirstName" 
+                          <label for="loginFirstName-desktop">Imię dziecka</label>
+                          <input id="loginFirstName-desktop" name="loginFirstName" 
                           class="form-input-double" type="text" placeholder="Wpisz imię">
                       </div>
                       <div class="form-input-double">
-                          <label for="loginLastName">Nazwisko dziecka</label>
-                          <input id="loginLastName" name="loginLastName" 
+                          <label for="loginLastName-desktop">Nazwisko dziecka</label>
+                          <input id="loginLastName-desktop" name="loginLastName" 
                           class="form-input-double" type="text" placeholder="Wpisz nazwisko">
                       </div>
                   </div>
                   <div class="form-row">
                     <div class="form-input-double">
-                      <label for="birthDate">Data urodzenia dziecka</label>
+                      <label for="loginBirthDate-desktop">Data urodzenia dziecka</label>
                       <div class="datepicker-wrapper">
                         <img src="images/Feedback form/calendar-clear.svg" alt="calendar-clear icon"
                         class="datepicker-icon">
-                        <input id="birthDate" name="birthDate" 
+                        <input id="loginBirthDate-desktop" name="loginBirthDate"
                         class="datepicker datepicker-input" type="text" 
                         placeholder="Wybierz datę urodzenia dziecka">
                       </div>
                     </div>
                     <div class="form-input-double">
-                      <label for="adaptationStartDate">Data planowanego rozpoczęcia adaptacji</label>
+                      <label for="loginAdaptationDate-desktop">Data planowanego rozpoczęcia adaptacji</label>
                       <div class="datepicker-wrapper">
                         <img src="images/Feedback form/calendar.svg" alt="calendar icon" 
                         class="datepicker-icon">
-                        <input id="adaptationStartDate" name="adaptationStartDate" 
+                        <input id="loginAdaptationDate-desktop" name="loginAdaptationDate"
                         class="datepicker datepicker-input" type="text" placeholder="Wybierz datę">
                       </div>
                     </div>
                     </div>
                     <div class="form-row">
                     <div class="form-input-double">
-                      <label for="loginContactPerson">Osoba do kontaktu</label>
-                          <input id="loginContactPerson" name="loginContactPerson" 
+                      <label for="loginContactPerson-desktop">Osoba do kontaktu</label>
+                          <input id="loginContactPerson-desktop" name="loginContactPerson" 
                           class="form-input-double" type="text" placeholder="Wpisz imię i nazwisko">
                     </div>
                     <div class="form-input-double">
-                      <label for="loginPhone">Numer telefonu do kontaktu</label>
-                      <input id="loginPhone" name="loginPhone" 
+                      <label for="loginPhone-desktop">Numer telefonu do kontaktu</label>
+                      <input id="loginPhone-desktop" name="loginPhone" 
                       class="form-input-double" type="phone" placeholder="xxx-xxx-xxx">
                     </div>
                 </div>
                   <div class="form-row">
                     <div class="form-input">
-                        <label for="loginEmail">Adres e-mail do kontaktu</label>
-                        <input id="loginEmail" name="loginEmail" 
+                        <label for="loginEmail-desktop">Adres e-mail do kontaktu</label>
+                        <input id="loginEmail-desktop" name="loginEmail" 
                         class="form-input" type="email" placeholder="Wpisz swój adres e-mail">
                     </div>
                 </div>
                   <div class="form-row">
                     <div class="form-input">
-                      <label for="loginText">Twoja wiadomość do przedszkola leśna droga</label>
-                      <textarea id="loginText" name="loginText" cols="30" rows="10" 
+                      <label for="loginText-desktop">Twoja wiadomość do przedszkola leśna droga</label>
+                      <textarea id="loginText-desktop" name="loginText" cols="30" rows="10" 
                       placeholder="Wpisz tutaj swoją wiadomość..."></textarea>
                     </div>
                   </div>
@@ -1026,38 +1021,38 @@
                         a.pluska@lesnadroga.edu.pl
                       </a>
                     </div>
-                  <button name="loginSubmit" id="loginSubmitButton" 
+                  <button name="loginSubmit" id="loginSubmitButton-desktop" 
                   class="form__button" type="submit">Wyślij wiadomość</button>
-                  <input type="hidden" name="formType" value="childRecruitment">
                   </div>
-              </form>
+                  </form>
           </div>
 
           <div class="signup active">
-              <form id="signupForm" action="process_form.php" method="post" enctype="multipart/form-data">
+          <form action="process_form.php" method="post" enctype="multipart/form-data">
+            <input type="hidden" name="formType" value="teamRecruitment">
                   <div class="form-row">
                       <div class="form-input-double">
-                          <label for="signupFirstName">Imię</label>
-                          <input id="signupFirstName" name="signupFirstName" 
+                          <label for="signupFirstName-desktop">Imię</label>
+                          <input id="signupFirstName-desktop" name="signupFirstName" 
                           class="form-input-double" type="text" placeholder="Wpisz imię">
                       </div>
                       <div class="form-input-double">
-                          <label for="signupLastName">Nazwisko</label>
-                          <input id="signupLastName" name="signupLastName" 
+                          <label for="signupLastName-desktop">Nazwisko</label>
+                          <input id="signupLastName-desktop" name="signupLastName" 
                           class="form-input-double" type="text" placeholder="Wpisz nazwisko">
                       </div>
                   </div>
                   <div class="form-row">
                       <div class="form-input">
-                          <label for="signupEmail">Adres e-mail do kontaktu</label>
-                          <input id="signupEmail" name="signupEmail" 
+                          <label for="signupEmail-desktop">Adres e-mail do kontaktu</label>
+                          <input id="signupEmail-desktop" name="signupEmail" 
                           class="form-input" type="email" placeholder="Wpisz swój adres e-mail">
                       </div>
                   </div>
                   <div class="form-row">
                     <div class="form-input-double">
-                      <label for="signupPhone">Numer telefonu</label>
-                      <input id="signupPhone" name="signupPhone" 
+                      <label for="signupPhone-desktop">Numer telefonu</label>
+                      <input id="signupPhone-desktop" name="signupPhone" 
                       class="form-input-double" type="text" placeholder="xxx-xxx-xxx">
                     </div>
                     <div class="form-input-double">
@@ -1071,8 +1066,8 @@
                   </div>
                     <div class="form-row">
                       <div class="form-input">
-                        <label for="signupText">Twoja wiadomość do przedszkola leśna droga</label>
-                        <textarea id="signupText" name="signupText" cols="30" rows="10" 
+                        <label for="signupText-desktop">Twoja wiadomość do przedszkola leśna droga</label>
+                        <textarea id="signupText-desktop" name="signupText" cols="30" rows="10" 
                         placeholder="Wpisz tutaj swoją wiadomość..."></textarea>
                       </div>
                     </div>
@@ -1083,11 +1078,12 @@
                         a.pluska@lesnadroga.edu.pl
                       </a>
                     </div>
-                    <input type="hidden" name="formType" value="teamRecruitment">
-                    <button name="signupSubmit" id="signupSubmitButton" 
-                    class="form__button" type="submit">Wyślij wiadomość</button>
-                    </div>
-                  </form>
+                    <button name="signupSubmit" id="signupSubmitButton-desktop" 
+                    class="form__button" type="submit">
+                    Wyślij wiadomość
+                  </button>
+                  </div>
+          </form>
           </div>
       </div>
   </div>
@@ -1095,12 +1091,10 @@
 </section>
 
 
-
 <div class="text-button-up">
   <p class="text-up">Przewiń w górę</p>
   <div class="button-up" id="scroll-to-top-lg"></div>
 </div>
-
 
 
 <section class="rights">
