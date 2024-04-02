@@ -35,7 +35,6 @@ img {
 
 
 
-
 /* TOP section */
 
 .top-section {
@@ -106,7 +105,6 @@ a:hover {
 .info-content:hover {
   color: #547E32;
 }
-
 
 
 
@@ -200,20 +198,12 @@ a:hover {
 
 
 
-
 /* INFORMATION section */
 
 .vector-1__slider {
   width: 485px;
   height: 100%;
   position: relative;
-  display: flex;
-  justify-content: center;
-}
-
-.vector-1__slider-img {
-  width: 100%;
-  position: absolute;
   display: flex;
   justify-content: center;
 }
@@ -226,6 +216,7 @@ a:hover {
   justify-content: center;
 }
 
+.vector-1__slider-img,
 .vector-2__slider-img {
   width: 100%;
   position: absolute;
@@ -348,10 +339,7 @@ a:hover {
   margin-right: -30px;
 }
 
-.swiper-button-prev-1:after {
-  font-size: 17px!important;
-}
-
+.swiper-button-prev-1:after,
 .swiper-button-next-1:after {
   font-size: 17px!important;
 }
@@ -383,7 +371,6 @@ a:hover {
   height: 230px;
   opacity: 0.2;
 }
-
 
 
 
@@ -501,8 +488,7 @@ a:hover {
   transition: max-height 0.6s ease;
   margin-left: 30px;
   margin-bottom: 35px;
-  border-bottom: 1px solid #CDCDCD;
-  
+  border-bottom: 1px solid #CDCDCD; 
 }
 
 .content.active {
@@ -554,9 +540,7 @@ a:hover {
 
 
 
-
 /* ORGANIZATION section */
-
 
 #svgsteps-1 {
   position: absolute;
@@ -604,7 +588,6 @@ a:hover {
   position: relative;
 }
 
-
 .image__organization {
   width: 100%;
   min-height: 365px;
@@ -628,7 +611,6 @@ a:hover {
   margin-left: 30px;
   margin-bottom: 35px;
   border-bottom: 1px solid #CDCDCD;
-  
 }
 
 .program-list {
@@ -726,7 +708,6 @@ a:hover {
 
 
 
-
 /* RECRUTATION section */
 
 .vectors__kids-recrutation {
@@ -742,17 +723,13 @@ a:hover {
   padding-top: 100px;
 }
 
-.vector-1__kids-recrutation-img {
-  width: 100%;
-  position: absolute;
-}
-
 .vector-2__kids-recrutation {
   width: 422px;
   height: 100%;
   position: relative;
 }
 
+.vector-1__kids-recrutation-img,
 .vector-2__kids-recrutation-img {
   width: 100%;
   position: absolute;
@@ -846,13 +823,11 @@ a:hover {
   font-weight: 500;
 }
 
-
 .recrutation__button {
   display: flex;
   justify-content: center;
   margin-bottom: 0rem;
 }
-
 
 .recrutation__btn {
   height: 46px;
@@ -871,7 +846,6 @@ a:hover {
   background-color: #547E32;
   color: #FFFFFF;
 }
-
 
 
 
@@ -938,7 +912,6 @@ a:hover {
 
 
 
-
 /* CONTACTS section */
 
 .vector-1__contacts {
@@ -947,17 +920,13 @@ a:hover {
   position: relative;
 }
 
-.vector-1__contacts-img {
-  width: 100%;
-  position: absolute;
-}
-
 .vector-2__contacts {
   width: 508px;
   height: 100%;
   position: relative;
 }
 
+.vector-1__contacts-img,
 .vector-2__contacts-img {
   width: 100%;
   position: absolute;
@@ -1075,7 +1044,6 @@ a:hover {
 i {
   margin-left: 15px;
 }
-
 
 
 
@@ -1294,8 +1262,7 @@ div .form-input label,
   height: 24px;
 }
 
-.form-input-double
-.datepicker-input {
+.form-input-double .datepicker-input {
   -webkit-appearance: none;
   padding-left: 40px;
   width: 100%;
@@ -1356,12 +1323,10 @@ div .form-input label,
   line-height: 25.2px;
 }
 
-/* On hover */
 .custom-file-button:hover {
   border: 2px solid #547E32;
 }
 
-/* On activation */
 .custom-file-button:active {
   background-color: #547E32;
   color: #FFFFFF;
@@ -1404,7 +1369,6 @@ div .form-input label,
 
 
 
-
 /* RIGHTS section */
 
 .rights {
@@ -1422,7 +1386,6 @@ div .form-input label,
 
 
 
-
 /* ADAPTIVE */
 
 @media screen and (max-width: 1024px) {
@@ -1432,6 +1395,10 @@ div .form-input label,
   .accordion__offers,
   .accordion__organization {
     overflow: visible;
+  }
+  .swiper-button-next-2,
+  .swiper-button-prev-2 {
+    top: 90%
   }
   .quote__text {
     padding: 200px 0 0;
@@ -1483,11 +1450,8 @@ div .form-input label,
   .swiper-wrapper {
     width: 100%;
   }
-  .swiper-slide {
-    padding: 20px;
-  }
   #svgsteps-3 {
-    left: 80%;
+    left: 75%;
     height: 390px;
   }
   #svgsteps-4 {
@@ -1495,8 +1459,8 @@ div .form-input label,
   }
   #svglizard {
     top: calc(-50%);
-    left: 69%;
-    height: 340px;
+    left: 79%;
+    height: 400px;
   }
   #svglizard-2 {
     width: 425px;
@@ -2123,12 +2087,14 @@ div .form-input label,
     margin-top: 0;
     margin-right: 0;
   }
-  div .form-input label, .form-input-double label {
+  div .form-input label,
+  .form-input-double label {
     font-size: 12px;
     line-height: 21.6px;
     margin-bottom: 8px;
   }
-  .form-input input, .form-input-double input {
+  .form-input input,
+  .form-input-double input {
     margin: 0;
   }
   .datepicker-wrapper {
