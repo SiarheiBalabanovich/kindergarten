@@ -1221,6 +1221,7 @@ div .form-input label,
 }
 
 .form-input textarea {
+  resize: none;
   width: 754px;
   height: 100px;
   font-size: 14px;
