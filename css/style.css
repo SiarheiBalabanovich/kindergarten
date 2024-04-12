@@ -54,6 +54,7 @@ img {
   display: flex;
   align-items: center;
   margin-top: 10px;
+  margin-left: 15px;
 }
 
 .social-icons a {
