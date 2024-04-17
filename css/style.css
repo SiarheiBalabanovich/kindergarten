@@ -1791,7 +1791,7 @@ div .form-input label,
   .quote__text {
     font-size: 20px;
     line-height: 32px;
-    padding: 80px 23px 12px;
+    padding: 80px 0px 12px;
     font-weight: 500;
   }
   .quote__author-text {
