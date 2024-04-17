@@ -857,8 +857,10 @@ a:hover {
 }
 
 .documents__items {
+  max-width: 1146px;
+  margin: 0 auto;
   display: grid;
-  grid-template-columns: repeat(3, 362px);
+  grid-template-columns: repeat(4, 1fr);
   justify-content: center;
   gap: 30px;
 }
@@ -874,22 +876,15 @@ a:hover {
 }
 
 .documents__item-img {
-  margin-bottom: 10px;
+  margin-bottom: 30px;
   border-radius: 8px;
   width: 100%;
 }
 
 .documents__item-title {
-  font-size: 24px;
+  font-size: 18px;
   color: #1E1E1C;
-  margin-bottom: 5px;
-  text-align: center;
-}
-
-.documents__item-text {
-  font-size: 16px;
-  color: #585756;
-  margin-bottom: 79px;
+  margin-bottom: 30px;
   text-align: center;
 }
 
