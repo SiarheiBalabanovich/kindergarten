@@ -1923,7 +1923,7 @@ div .form-input label,
     width: 280px;
     text-align: center;
     margin-top: 20px;
-    font-size: 12px;
+    font-size: 14px;
   }
   .contacts {
     width: 280px;
@@ -1936,7 +1936,7 @@ div .form-input label,
     margin-bottom: 80px;
   }
   .contacts li {
-    width: 280px;
+    width: 320px;
     height: 47px;
   }
   .contacts-information {
@@ -1956,25 +1956,26 @@ div .form-input label,
   .vector-1__contacts-img {
     width: 280px;
     height: 110px;
+    margin-left: 35px;
   }
   .vector-1__contacts {
     display: none;
   }
   .vector-2__contacts {
-    width: 280px;
+    width: 320px;
     margin-left: 5px;
     display: flex;
     justify-content: center;
     background-color: #FFFFFF;
     position: static;
   }
-  .vector-2__contacts-img {
+  .vector-2__contacts-img{
     display: none;
   }
   .vector__contacts-title {
     font-size: 28px;
     line-height: 34px;
-    left: 22px;
+    left: 39px;
     top: 21px;
     text-align: center;
     width: 245px;
@@ -1995,7 +1996,7 @@ div .form-input label,
   }
   .vector-brown-contacts,
   .vector-white-contacts {
-    margin-left: 0;
+    margin: 0 -20px auto;
   }
   .vectors__for-form {
     height: 300px;
