@@ -1464,10 +1464,6 @@ div .form-input label,
     top: 115%;
     left: 16%;
   }
-  .documents__items {
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
-  }
   .contacts__card {
     margin: 0 auto;
   }
@@ -1914,6 +1910,10 @@ div .form-input label,
     width: 100%;
     margin-top: 30px;
     text-align: center;
+  }
+  .documents__items {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
   }
   .contacts-img {
     max-width: 100%;
