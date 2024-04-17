@@ -781,6 +781,7 @@ a:hover {
 }
 
 .recrutation-wrapper {
+  max-width: 234px;
   margin: 0 auto;
   text-align: center;
 }
