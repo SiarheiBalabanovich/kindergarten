@@ -1398,7 +1398,8 @@ div .form-input label,
     top: 90%
   }
   .quote__text {
-    padding: 200px 0 0;
+    font-size: 32px;
+    padding: 160px 0 0;
   }
   .contacts__card {
     flex-direction: column;
